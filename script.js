@@ -1,6 +1,12 @@
-const botao = document.querySelector("#menu-toggle");
-const menu = document.querySelector("#menu-mobile");
+const botao = document.querySelector("#Menu-toggle");
+const menu = document.querySelector("#Menu-mobile");
 const links = menu.querySelectorAll("a");
+
+window.history.scrollRestoration = "manual";
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
 
 function fecharMenu(){
     menu.classList.remove("ativo");
