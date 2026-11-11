@@ -4,68 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="caixa-principl" id="hmoe">
-         <nav>
-            <h2  class="portfolio">Portfo<span>lio</span></h2>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projeto">Projetos</a></li>
-                <li><a href="#falecmg">Fale comigo</a></li>
-            </ul>
-        </nav>
-        
-        <img src="img/background-home.png" class="fotohome">
-        
-        <div class="nome">
-            <h1 >Kayke <span>Alexandre</span></h1>
-            <h3>Programador Front End</h3>
-        </div>
+    <div class="caixa-principl" id="home">
+      <nav>
+        <h2 class="portfolio">Portfo<span>lio</span></h2>
+        <ul class="navbar" id="menu-mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projeto">Projetos</a></li>
+          <li><a href="#falecmg">Fale comigo</a></li>
+        </ul>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+        >
+          ☰
+        </button>
+      </nav>
+
+      <img src="img/background-home.png" class="fotohome" />
+
+      <div class="nome">
+        <h1>Kayke <span>Alexandre</span></h1>
+        <h3>Programador Front End</h3>
+      </div>
     </div>
     <section class="sobre" id="sobre">
-        <img src="img/kayke foto.png" class="minhafoto">
-        <div>
-            <h2>Sobre mim</h2>
-            <p>Eu sou um Programador Front End em formação, tenho experiencia e conhecimento criando aplicções com HTML, CSS e JavaScript</p>
-            <button>Entre em contato</button>
-        </div>
+      <img src="img/kayke foto.png" class="minhafoto" />
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Eu sou um Programador Front End em formação, tenho experiencia e
+          conhecimento criando aplicções com HTML, CSS e JavaScript
+        </p>
+        <button>Entre em contato</button>
+      </div>
     </section>
     <section class="Projetos" id="projeto">
-        <div>
-            <h2>Principais Projetos</h2>
+      <div>
+        <h2>Principais Projetos</h2>
+      </div>
+      <div class="cardsp">
+        <div class="card">
+          <img src="img/logo-aurora.png" />
+          <h5>Café Aurora</h5>
+          <p>
+            Projeto autoral de uma cafeteria fictícia, desenvolvido com HTML,
+            CSS e JavaScript. Apresenta uma página institucional responsiva,
+            cardápio visual, seção sobre a marca e menu mobile.
+          </p>
+          <a
+            href="https://kaykealexandrehxc-glitch.github.io/cafe-aurora/?utm_source=chatgpt.com"
+            target="_blank"
+            >Ver projeto</a
+          >
         </div>
-           <div class="cardsp">
-            <div class="card">
-                <img src="img/logo-aurora.png">
-                <h5>Café Aurora</h5>
-                <p>Projeto autoral de uma cafeteria fictícia, desenvolvido com HTML, CSS e JavaScript. Apresenta uma página institucional responsiva, cardápio visual, seção sobre a marca e menu mobile.</p>
-                <a href="https://kaykealexandrehxc-glitch.github.io/cafe-aurora/?utm_source=chatgpt.com" target="_blank">Ver projeto</a>
-            </div>
-            <div class="card">
-                
-            </div>
-            <div class="card">
-                
-            </div>
-        </div> 
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
     </section>
     <footer class="rodape" id="falecmg">
-        <h5>Kayke Alexandre</h5>
-        <p>Para mais informações</p>
-        <div class="social">
-            <a href="https://wa.me/5511971610946"><img src="img/whatsapp.png" alt=""> </a>
-            <a href="https://www.linkedin.com/in/kayke-alexandre-dev" target="_blank"><img src="img/linkedin.png"></a>
-            
-        </div>
+      <h5>Kayke Alexandre</h5>
+      <p>Para mais informações</p>
+      <div class="social">
+        <a href="https://wa.me/5511971610946"
+          ><img src="img/whatsapp.png" alt="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kayke-alexandre-dev"
+          target="_blank"
+          ><img src="img/linkedin.png"
+        /></a>
+      </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
