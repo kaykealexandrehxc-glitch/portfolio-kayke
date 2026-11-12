@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-.caixa-principl {
+.caixa-principal {
   background-color: #191919;
   height: 100vh;
   width: 100%;
@@ -46,7 +46,7 @@ li:hover {
   color: #2563eb;
 }
 
-.navbar a{
+.navbar a {
   color: #ffff;
   display: inline-block;
   list-style: none;
@@ -55,7 +55,7 @@ li:hover {
   transition: 0.5s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: #2563eb;
 }
 .nome {
@@ -91,6 +91,7 @@ h1 span {
   align-items: center;
   background-color: black;
   width: 100%;
+  padding: 4rem 1rem;
 }
 
 .minhafoto {
@@ -108,9 +109,10 @@ h1 span {
 .sobre p {
   color: rgba(193, 183, 183, 0.998);
   font-size: 25px;
+  padding: 1rem;
 }
 
-.sobre div button {
+.sobre div a {
   color: #ffffff;
   background-color: #2563eb;
   height: 45px;
@@ -119,9 +121,10 @@ h1 span {
   border: none;
   border-radius: 27px;
   margin-top: 20px;
+  padding: 1.2rem;
 }
 
-.sobre div button:hover {
+.sobre div a:hover {
   background-color: black;
   border: 2px solid #2563eb;
   transition: 0.5s;
@@ -131,8 +134,9 @@ h1 span {
 
 .Projetos {
   background-color: #191919;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding-bottom: 25px;
 }
 
 .Projetos h2 {
@@ -157,6 +161,10 @@ h1 span {
   text-align: center;
 }
 
+.card:hover {
+  transform: scale(1.07);
+}
+
 .card h5 {
   color: #ffffff;
   font-size: 30px;
@@ -173,7 +181,7 @@ h1 span {
 }
 
 .card a {
-  display:inline-block;
+  display: inline-block;
   color: #fff;
   background-color: #191919;
   padding: 10px 20px;
@@ -188,40 +196,37 @@ h1 span {
   transform: scale(1.2);
 }
 
-
-.rodape{
+.rodape {
   background-color: #000;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 120px;
 }
 
-.rodape h5{
+.rodape h5 {
   color: #fff;
   font-size: 30px;
 }
 
-
-
-.rodape p{
+.rodape p {
   color: #fff;
   font-size: 18px;
   margin-bottom: 30px;
   margin-top: 14px;
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.social img{
+.social img {
   height: 24px;
   border-radius: 50%;
 }
 
-.social a{
+.social a {
   background-color: #191919;
   border-radius: 100%;
   display: flex;
@@ -233,9 +238,9 @@ h1 span {
   transition: 0.5s;
 }
 
-.social a:hover{
+.social a:hover {
   transform: scale(1.3);
-  border:1px solid #2563eb;
+  border: 1px solid #2563eb;
 }
 
 .menu-toggle {
@@ -251,33 +256,34 @@ h1 span {
   cursor: pointer;
 }
 
-@media(max-width: 768px) {
-  
-  .caixa-principl{
+@media (max-width: 768px) {
+  .caixa-principl {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
   }
-  
-  nav{
+
+  nav {
     position: absolute;
     top: 0;
   }
 
-  .nome{
+  .nome {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-  .fotohome{
+
+  .nome h1 {
+    font-size: 45px;
+  }
+  .fotohome {
     display: none;
-
   }
 
-  .caixa-principl nav{
+  .caixa-principl nav {
     width: 100%;
   }
 
@@ -286,70 +292,122 @@ h1 span {
   }
   .menu-toggle {
     display: block;
+    position: absolute;
+    left: 625px;
   }
   header {
     width: calc(100% - 24px);
   }
 
-  .navbar.ativo{
+  .navbar.ativo {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 65px;
-    right: 0;
+    left: 605px;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
     padding: 20px;
     border-radius: 12px;
     gap: 15px;
-
   }
-   .Projetos{
+  .Projetos {
     height: 100%;
-   }
-  .cardsp{
+  }
+  .cardsp {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
     padding: 30px;
-
   }
 
-  .sobre{
+  .sobre {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
-  .sobre div{
+  .sobre h2 {
+    font-size: 5rem;
+  }
+  .sobre div {
     text-align: center;
   }
- 
+
+  .sobre a {
+    margin-bottom: 0.5rem;
+  }
 }
 
-@media (max-width:426px) {
-  .caixa-principl{
+@media (max-width: 426px) {
+  .caixa-principl {
     width: 100%;
   }
 
-  .sobre{
+  .sobre {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
-  .sobre div{
-   text-align: center;
+  .sobre div {
+    text-align: center;
   }
 
-  .Projetos h2{
+  .sobre h2 {
+    font-size: 2.5rem;
+  }
+
+  .sobre p {
+    font-size: 1.3rem;
+    line-height: 25px;
+    padding: 10px;
+  }
+  .Projetos h2 {
     font-size: 29px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card p {
+    margin-top: 14px;
+    margin-bottom: 25px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 282px;
+  }
+
+  .navbar.ativo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: -225px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 325px) {
+  
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 235px;
   }
 }
