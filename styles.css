@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+/* body{
+  background-color: #191919;
+  width: 100dvw;
+/* } */
 .caixa-principal {
   background-color: #191919;
   height: 100vh;
@@ -81,7 +85,7 @@ h1 span {
   display: flex;
   height: 350px;
   width: 570px;
-  margin-left: 350px;
+  margin-left: 541px;
   margin-bottom: 415px;
   margin-top: 68px;
 }
@@ -159,6 +163,7 @@ h1 span {
   border-radius: 16px;
   padding: 10px 35px;
   text-align: center;
+  margin-top: 18px;
 }
 
 .card:hover {
@@ -257,157 +262,89 @@ h1 span {
 }
 
 @media (max-width: 768px) {
-  .caixa-principl {
-    width: 100%;
+  .menu-toggle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
-
-  nav {
-    position: absolute;
-    top: 0;
-  }
-
-  .nome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .nome h1 {
-    font-size: 45px;
-  }
-  .fotohome {
-    display: none;
-  }
-
-  .caixa-principl nav {
-    width: 100%;
+  .caixa-principal {
+    height: 450px;
+    position: relative;
   }
 
   .navbar {
     display: none;
-  }
-  .menu-toggle {
-    display: block;
     position: absolute;
-    left: 625px;
+    top: 74px;
+    right: 0;
+    margin-right: 36px;
+    border-radius: 20%;
+    line-height: 1.2;
   }
-  header {
-    width: calc(100% - 24px);
+  .navbar li {
+    margin: 0;
   }
 
   .navbar.ativo {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 65px;
-    left: 605px;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(12px);
-    padding: 20px;
-    border-radius: 12px;
-    gap: 15px;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    z-index: 5;
+    line-height: 1.4;
   }
-  .Projetos {
-    height: 100%;
+  .fotohome {
+    display: none;
   }
-  .cardsp {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 30px;
+  .nome {
+    top: 35%;
   }
-
   .sobre {
-    display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 20px;
-  }
-
-  .sobre h2 {
-    font-size: 5rem;
   }
   .sobre div {
     text-align: center;
   }
-
-  .sobre a {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media (max-width: 426px) {
-  .caixa-principl {
-    width: 100%;
-  }
-
-  .sobre {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 20px;
-  }
-
-  .sobre div {
-    text-align: center;
-  }
-
   .sobre h2 {
-    font-size: 2.5rem;
-  }
-
-  .sobre p {
-    font-size: 1.3rem;
-    line-height: 25px;
-    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   .Projetos h2 {
-    font-size: 29px;
+    font-size: 60px;
   }
-
-  .card {
-    height: auto;
-  }
-
-  .card p {
-    margin-top: 14px;
-    margin-bottom: 25px;
-  }
-
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    left: 282px;
-  }
-
-  .navbar.ativo {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 65px;
-    right: -225px;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(12px);
-    padding: 20px;
-    border-radius: 12px;
-    gap: 15px;
+  .cardsp {
+    flex-wrap: wrap;
   }
 }
 
-@media (max-width: 325px) {
-  
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    left: 235px;
+@media (max-width: 427px) {
+  .caixa-principal{
+    height: 450px;
+  }
+  .nome {
+    top: 45%;
+  }
+  .nome h1{
+    font-size: 38px;
+  }
+  .nome p{
+    font-size: 20px;
+  }
+  .sobre h2{
+    line-height: 1.2;
+  }
+  .cardsp{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 326px) {
+  .sobre h2{
+    line-height: 1.2;
+    font-size: 35px;
+  }
+  .sobre p{
+    font-size: 20px;
   }
 }
